@@ -1,0 +1,10 @@
+{
+  "indexURL": "h5://20201221151641308476726/html/index.html",
+  "appId": "20201221151641308476726",
+  "minSdkVersionName": "1.2.8",
+  "versionName": "1.0.0",
+  "navigationBar": {
+    "navigationStyle": "custom",
+    "menuButtonColor": "black"
+  }
+}

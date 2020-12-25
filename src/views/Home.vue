@@ -5,15 +5,12 @@
 
     <ul class="page">
       <li>
-        <!-- vueTemplateIntro -->
-        <router-link to="/vueTemplateIntro" class="desc-link">{{$t('home.wlkVueTemplateIntro')}}</router-link>
-      </li>
-      <li>
-        <!-- UI练习 -->
         <!-- defaultPage页面 -->
         <router-link to="/defaultPage" class="desc-link">{{$t('home.DefaultPage')}}</router-link>
       </li>
-      <li></li>
+      <li>
+        <router-link to="/fromView" class="desc-link">维修申请示例</router-link>
+      </li>
       <li></li>
       <li></li>
       <li></li>
@@ -32,11 +29,15 @@ export default {
   },
   data() {
     return {
+      // 传输给header组件的标题
       title: '示例',
+      // 传输给header组件的，是否显示返回箭头
       isShow: false
     };
   },
-  created() {},
+  created() {
+
+  },
   computed: {
     ...mapState(['deviceInfo'])
   },
@@ -47,14 +48,18 @@ export default {
 </script>
 
 <style lang="less" scoped>
+// app
 .App {
-  padding: 0px;
+  padding-top: 70px;
 
+  // 内容
   .page {
+
+    // router-link样式
     .desc-link {
       display: block;
       line-height: 3em;
-      border-bottom: 1px solid #f5f5f5;
+      border-bottom: 1px solid #ddd;
       color: #000;
       font-size: 14px;
       text-align: left;

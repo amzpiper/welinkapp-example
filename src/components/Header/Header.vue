@@ -5,7 +5,7 @@
       <img id="back" :src="backImg" />
     </router-link>
     <router-link to="/" v-if="!show">
-      <i class="icon-tab icon-tab-business tab-business"></i>
+      <i class="icon-24 icon-24-sort tab-business"></i>
     </router-link>
     <!-- 标题 -->
     {{ title }}
@@ -33,7 +33,7 @@ export default {
 
 <style lang="less" scoped>
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
   top:0px;
   z-index: 99999999;
@@ -42,19 +42,21 @@ header {
   text-align: center;
   line-height: 50px;
   background-color: #343745;
+  // background-color: #fff;
+  padding-top:20px;
+  border-bottom: 1px solid #aaa;
 }
 
 header #back {
   position: absolute;
-  top: 9px;
+  top: 29px;
   left: 6px;
   width: 32px;
   height: 32px;
 }
 header .tab-business{
   position: absolute;
-  top: 13px;
+  top: 33px;
   left: 10px;
-  color: #fff;
 }
 </style>

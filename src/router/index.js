@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Home from '@/views/Home.vue';
 import DefaultPage from '@/views/DefaultPage.vue';
+import FromView from '@/views/FromView.vue';
 
 Vue.use(VueRouter);
 
@@ -32,8 +33,8 @@ const routes = [
     component:DefaultPage
   },
   {
-    path: '/vueTemplateIntro',
-    component: view('/VueTemplateIntro.vue')
+    path:'/fromView',
+    component:FromView
   },
 ];
 
