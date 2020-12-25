@@ -1,0 +1,44 @@
+//变量 
+.less{
+    @width:10px;
+    @height:10px;
+    
+    #header{
+        width:@width;
+        height: @height;
+        &:after{
+        display:flex;
+        }
+        @a:5%;
+        @b:4%;
+        @c:@a+@b;
+        @media (min-width: 768px) {
+        display:block;
+        }
+        @memin:~"(min-width: 768px)";
+        @min768: (min-width: 768px);
+        @media @memin {
+        }
+        @media @memax{
+        }
+
+        #bundle() {
+        .button{
+            display: block;
+        }
+        }
+        #colors() {
+        primary: blue;
+        }
+        
+        #header a{
+        color: #colors[primary];
+        #bundle:button();
+        }
+        @var:red
+        .color{
+        color: @var;
+        @var:blue;
+        }
+    }
+}
